@@ -15,7 +15,7 @@ const errorLink = onError(({ graphqlErrors, networkError }) => {
     graphqlErrors.map(({ message, location, path }) => {
       alert(`Graphql error ${message}`);
     });
-  }
+  }j
 });
 
 const link = from([
