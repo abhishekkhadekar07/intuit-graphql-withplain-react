@@ -1,4 +1,7 @@
 const graphql = require("graphql");
+// for static list of users 
+const _ = require('lodash')
+const axios = require('axios')
 const {
   GraphQLObjectType,
   GraphQLSchema,
@@ -17,7 +20,26 @@ const RootQuery = new GraphQLObjectType({
       type: new GraphQLList(UserType),
       args: { id: { type: GraphQLInt } },
       resolve(parent, args) {
-        return userData;
+        return axios.get(`http://localhost:3000/users`)
+          .then(res => res.data)
+        return userData
+      },
+    },
+    getUserByName: {
+      type: UserType,
+      args: { firstName: { type: GraphQLString } },
+      resolve(parent, args) {
+        return _.find(userData, { firstName: args.firstName })
+      }
+    },
+
+    getUserById: {
+      type: UserType,
+      args: { id: { type: GraphQLInt } },
+      resolve(parent, args) {
+        return axios.get(`http://localhost:3000/users/${args.id}`)
+          .then(res => res.data)
+        // .then(data=>data)
       },
     },
   },
