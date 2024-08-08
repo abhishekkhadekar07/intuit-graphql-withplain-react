@@ -9,9 +9,9 @@ const {
   GraphQLString,
   GraphQLList,
 } = graphql;
-const userData = require("../MOCK_DATA.json");
-
-const UserType = require("./TypeDefs/UserType");
+// const userData = require("../MOCK_DATA.json");
+const UserType = require("./TypeDefs/UserType")
+// const CompanyType = require('./TypeDefs/CompanyType');
 
 const RootQuery = new GraphQLObjectType({
   name: "RootQueryType",
@@ -25,6 +25,14 @@ const RootQuery = new GraphQLObjectType({
         return userData
       },
     },
+    // comapany: {
+    //   type: CompanyType,
+    //   args: { id: { type: GraphQLInt } },
+    //   resolve(parentvalue, args) {
+    //     return axios.get(`http://localhost:3000/companies/${args.id}`)
+    //       .then(res => res.data)
+    //   }
+    // },
     getUserByName: {
       type: UserType,
       args: { firstName: { type: GraphQLString } },
@@ -56,17 +64,32 @@ const Mutation = new GraphQLObjectType({
         email: { type: GraphQLString },
         password: { type: GraphQLString },
       },
-      resolve(parent, args) {
-        userData.push({
-          id: userData.length + 1,
-          firstName: args.firstName,
-          lastName: args.lastName,
-          email: args.email,
-          password: args.password,
-        });
-        return args;
+      resolve(parent, { firstName, lastName, email, password }) {
+        return axios.post(`http://localhost:3000/users`, { firstName, lastName, email, password })
+          .then(res => res.data);
       },
     },
+    deleteUser: {
+      type: UserType,
+      args: { id: { type: GraphQLInt } },
+      resolve(parentValue, { id }) {
+        axios.delete(`http://localhost:3000/users/${id}`)
+          .then((res) => res.data)
+      }
+    },
+    editUser: {
+      type: UserType,
+      args: {
+        id: { type: GraphQLInt },
+        firstName: { type: GraphQLString },
+        lastName: { type: GraphQLString },
+        password: { type: GraphQLString }
+      },
+      resolve(parentvalue, args) {
+        return axios.patch(`http://localhost:3000/users/${args.id}`, args)
+          .then((res) => res.data)
+      }
+    }
   },
 });
 
