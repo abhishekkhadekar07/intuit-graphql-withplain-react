@@ -1,96 +1,103 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "firstName": "Phineas",
-            "lastName": "Franciottoi",
-            "email": "pfranciottoi0@hostgator.com",
-            "password": "y0pWrGzmDz",
-            "companyId": 1
-        },
-        {
-            "id": 2,
-            "firstName": "Mikel",
-            "lastName": "Gregoli",
-            "email": "mgregoli1@amazon.de",
-            "password": "G0VfMCL",
-            "companyId": 2
-        },
-        {
-            "id": 3,
-            "firstName": "Moira",
-            "lastName": "Mazzilli",
-            "email": "mmazzilli2@163.com",
-            "password": "3GgdWoOfT",
-            "companyId": 2
-        },
-        {
-            "id": 4,
-            "firstName": "Kaja",
-            "lastName": "True",
-            "email": "ktrue3@washington.edu",
-            "password": "N6032b",
-            "companyId": 2
-        },
-        {
-            "id": 5,
-            "firstName": "Robbie",
-            "lastName": "Mc Harg",
-            "email": "rmcharg4@scientificamerican.com",
-            "password": "9aYRY2B5Jgj",
-            "companyId": 2
-        },
-        {
-            "id": 6,
-            "firstName": "Niki",
-            "lastName": "Daber",
-            "email": "ndaber5@army.mil",
-            "password": "ccKCMM",
-            "companyId": 2
-        },
-        {
-            "id": 7,
-            "firstName": "Rana",
-            "lastName": "Gyrgorwicx",
-            "email": "rgyrgorwicx6@booking.com",
-            "password": "1R3G2WJ",
-            "companyId": 2
-        },
-        {
-            "id": 8,
-            "firstName": "Johnette",
-            "lastName": "Torricella",
-            "email": "jtorricella7@discuz.net",
-            "password": "l6Fip9FINxzR",
-            "companyId": 1
-        },
-        {
-            "id": 9,
-            "firstName": "Kristoforo",
-            "lastName": "Slinn",
-            "email": "kslinn8@scribd.com",
-            "password": "pT35uEWU5y",
-            "companyId": 1
-        },
-        {
-            "id": 10,
-            "firstName": "Wye",
-            "lastName": "Bushrod",
-            "email": "wbushrod9@infoseek.co.jp",
-            "password": "ElyzUYgyyWC",
-            "companyId": 1
-        }
-    ],
-    "companies": [
-        {
-            "id": 1,
-            "name": "apple",
-            "description": "iphone"
-        },
-        {
-            "id": 2,
-            "name": "Google",
-            "description": "search"
-        }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "firstName": "abhishek",
+      "lastName": "Franciottoi",
+      "email": "pfranciottoi0@hostgator.com",
+      "password": "y0pWrGzmDz",
+      "companyId": 1
+    },
+    {
+      "id": 2,
+      "firstName": "Mikel",
+      "lastName": "Gregoli",
+      "email": "mgregoli1@amazon.de",
+      "password": "G0VfMCL",
+      "companyId": 2
+    },
+    {
+      "id": 3,
+      "firstName": "Moira",
+      "lastName": "Mazzilli",
+      "email": "mmazzilli2@163.com",
+      "password": "3GgdWoOfT",
+      "companyId": 2
+    },
+    {
+      "id": 4,
+      "firstName": "Kaja",
+      "lastName": "True",
+      "email": "ktrue3@washington.edu",
+      "password": "N6032b",
+      "companyId": 2
+    },
+    {
+      "id": 5,
+      "firstName": "Robbie",
+      "lastName": "Mc Harg",
+      "email": "rmcharg4@scientificamerican.com",
+      "password": "9aYRY2B5Jgj",
+      "companyId": 2
+    },
+    {
+      "id": 6,
+      "firstName": "Niki",
+      "lastName": "Daber",
+      "email": "ndaber5@army.mil",
+      "password": "ccKCMM",
+      "companyId": 2
+    },
+    {
+      "id": 7,
+      "firstName": "Rana",
+      "lastName": "Gyrgorwicx",
+      "email": "rgyrgorwicx6@booking.com",
+      "password": "1R3G2WJ",
+      "companyId": 2
+    },
+    {
+      "id": 8,
+      "firstName": "Johnette",
+      "lastName": "Torricella",
+      "email": "jtorricella7@discuz.net",
+      "password": "l6Fip9FINxzR",
+      "companyId": 1
+    },
+    {
+      "id": 9,
+      "firstName": "Kristoforo",
+      "lastName": "Slinn",
+      "email": "kslinn8@scribd.com",
+      "password": "pT35uEWU5y",
+      "companyId": 1
+    },
+    {
+      "id": 10,
+      "firstName": "Wye",
+      "lastName": "Bushrod",
+      "email": "wbushrod9@infoseek.co.jp",
+      "password": "ElyzUYgyyWC",
+      "companyId": 1
+    },
+    {
+      "firstName": "abhishek",
+      "lastName": "khadekar",
+      "email": "abhishek@fgmail.com",
+      "password": "fsdaf",
+      "id": 11
+    }
+  ],
+  "companies": [
+    {
+      "id": 1,
+      "name": "apple",
+      "description": "iphone"
+    },
+    {
+      "id": 2,
+      "name": "Google",
+      "description": "search"
+    }
+  ]
 }
