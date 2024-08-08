@@ -8,10 +8,9 @@ npm install -g yarn
 nvm list 
 nvm setup install by going to this website -
 -->https://github.com/coreybutler/nvm-windows/releases
-
 this repository is basic use of graphql with react and in this also added server of graphql 
 
-
+don't uncomment companytype as if you uncomment it will stop working 
 
 
 
