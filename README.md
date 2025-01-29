@@ -1,21 +1,4 @@
-Windows PowerShell
-Copyright (C) Microsoft Corporation. All rights reserved.
-
-Try the new cross-platform PowerShell https://aka.ms/pscore6
-
-PS C:\Users\abhis> ollama run deepseek-r1:7b
-pulling manifest
-pulling 96c415656d37... 100% ▕████████████████████████████████████████████████████████▏ 4.7 GB
-pulling 369ca498f347... 100% ▕████████████████████████████████████████████████████████▏  387 B
-pulling 6e4c38e1172f... 100% ▕████████████████████████████████████████████████████████▏ 1.1 KB
-pulling f4d24e9138dd... 100% ▕████████████████████████████████████████████████████████▏  148 B
-pulling 40fb844194b2... 100% ▕████████████████████████████████████████████████████████▏  487 B
-verifying sha256 digest
-writing manifest
-success
->>> write code doubly linked list in javascript and explain it to human
-<think>
-Okay, I need to write a JavaScript function for a doubly linked list. Hmm, where do I start? Well, a doubly linked
+I need to write a JavaScript function for a doubly linked list. Hmm, where do I start? Well, a doubly linked
 list has nodes with previous and next pointers. So each node should have data, prev, and next attributes.
 
 First, create the Node class. It should take data as an argument and initialize prev and next to null. That makes
